@@ -7,8 +7,9 @@ package u2pp;
  */
  
 public class Car {
-    private double gas; //The amount of gas in the tank
-    private double mpg; //The fuel efficiency of the car in miles per gallon
+    private double gas=0.0; //The amount of gas in the tank
+
+    private double mpg=0.0; //The fuel efficiency of the car in miles per gallon
     private String make; //The make of the car
     private String model; //The model of the car
     
@@ -20,7 +21,10 @@ public class Car {
      * @param aModel - the model of the Car
      */ 
     public Car(double anEfficiency, String aMake, String aModel) {
-       //YOUR CODE HERE 	
+       //YOUR CODE HERE
+        this.mpg = anEfficiency;
+        this.make = aMake;
+        this.model = aModel;
     }
     
     /**
@@ -29,6 +33,7 @@ public class Car {
      */
     public void addGas (double amount) {
         //YOUR CODE HERE
+        this.gas = this.gas + amount;
     }
     
     /**
@@ -37,6 +42,7 @@ public class Car {
      */
     public void drive (double distance) {
         //YOUR CODE HERE
+        this.gas = this.gas - (distance/this.mpg);
     }
     
     /**
@@ -44,7 +50,8 @@ public class Car {
      */
     public double getGasInTank() {
         //YOUR CODE HERE
-        return 0.0;
+        return this.gas;
+
     }
     
     /**
@@ -52,6 +59,7 @@ public class Car {
      */
      public String getMakeAndModel() {
        return make + " " + model;
+
      }
     
     /**

@@ -10,6 +10,7 @@ class Main {
     public static void main(String[] args) {
 
         //YOUR CODE HERE
+        //input
         Scanner scanner = new Scanner(System.in);
         System.out.print("please enter how much gas is needed: ");
         double mpg = scanner.nextDouble();
@@ -30,8 +31,9 @@ class Main {
         System.out.println("left gas in the tank :" + gasInTank);
         System.out.println("brand:" + makeAndModel);
 
+
         scanner.close();
-//iaWad
+        //iaWad
         String str1 = "Brian";
         String str2 = "Wade";
         String str3 = wordChanger(str1, 2, 4, str2, 0, 3);

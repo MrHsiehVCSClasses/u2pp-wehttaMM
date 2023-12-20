@@ -42,6 +42,7 @@ public class Car {
      */
     public void drive (double distance) {
         //YOUR CODE HERE
+        //remainder gas
         this.gas = this.gas - (distance/this.mpg);
     }
     
@@ -50,6 +51,7 @@ public class Car {
      */
     public double getGasInTank() {
         //YOUR CODE HERE
+        // gas
         return this.gas;
 
     }
@@ -58,6 +60,7 @@ public class Car {
      * @return The make and model of the car
      */
      public String getMakeAndModel() {
+         //return make add model
        return make + " " + model;
 
      }
